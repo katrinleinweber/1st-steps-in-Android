@@ -29,6 +29,13 @@ public class MainActivity extends AppCompatActivity {
         });
 
         TextView helloText = (TextView) findViewById(R.id.myTextView);  // named variable = TextView cast from retrieved ID
+
+        helloText.setText("Bye, World!");
+    }
+
+    public void onBtnTouch(View v) {
+        TextView tv = (TextView) findViewById(R.id.myTextView);
+        tv.setText("Hello, World!");
     }
 
     @Override
