@@ -33,6 +33,11 @@ public class MainActivity extends AppCompatActivity {
         helloText.setText("Bye, World!");
     }
 
+    public void onBtnTouch(View v) {
+        TextView tv = (TextView) findViewById(R.id.myTextView);
+        tv.setText("Hello, World!");
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
