@@ -3,4 +3,6 @@
     <string name="btn_clr_lbl">Press to clear!</string>
     <string name="btn_tst_blb">Press to toast!</string>
     <string name="hnt_ntr_txt">Enter your text here!</string>
+    <string name="hnt_btn_clr">This button will clear the text in the above text field.</string>
+    <string name="hnt_tst_btn">This button will toast the text in the above text field.</string>
 </resources>
