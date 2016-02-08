@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         clearButton = (Button) findViewById(R.id.btnClear);
         toastButton = (Button) findViewById(R.id.btnToast);
 
-        // initiate onClick callbacks for EditText only, but not yet for buttons
+        // initiate onClick callback for EditText only, but not yet for buttons
         toToastText.setOnClickListener(new TextOnClickListener());
     }
 
