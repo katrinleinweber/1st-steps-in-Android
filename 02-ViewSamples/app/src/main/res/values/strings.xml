@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ViewSamples</string>
+    <string name="action_settings">Settings</string>
+    <string name="label">This is a label!</string>
+</resources>
