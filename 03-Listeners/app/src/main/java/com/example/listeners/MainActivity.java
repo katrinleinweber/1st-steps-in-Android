@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View v) {
             if (v.getId() == R.id.btnClear) {
                 toToastText.setText("");
+                toToastText.setHint(getString(R.string.hnt_clrd));
             } else if (v.getId() == R.id.btnToast) {
                 Toast.makeText(v.getContext(), toToastText.getText().toString(), Toast.LENGTH_SHORT).show();
             }

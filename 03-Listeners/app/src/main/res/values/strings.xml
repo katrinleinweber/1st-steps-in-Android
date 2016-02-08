@@ -5,4 +5,5 @@
     <string name="hnt_ntr_txt">Enter your text here!</string>
     <string name="hnt_btn_clr">This button will clear the text in the above text field.</string>
     <string name="hnt_tst_btn">This button will toast the text in the above text field.</string>
+    <string name="hnt_clrd">Please enter some text here (again).</string>
 </resources>
