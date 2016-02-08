@@ -13,6 +13,9 @@ public class MainActivity extends AppCompatActivity {
     private EditText toToastText;
     private Button clearButton;
     private Button toastButton;
+    private ButtonOnClickListener buttonListen;
+    private ButtonHintOnLongClick buttonHintListen;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +28,22 @@ public class MainActivity extends AppCompatActivity {
 
         // initiate onClick callbacks for EditText only, but not yet for buttons
         toToastText.setOnClickListener(new TextOnClickListener());
+    }
+
+    private class TextOnClickListener implements View.OnClickListener {
+        @Override
+        public void onClick(View v) { // receive clicked view as parameter
+
+            // initiated listeners once EditText is clicked
+            buttonListen = new ButtonOnClickListener();
+            buttonHintListen = new ButtonHintOnLongClick();
+
+            // same callback for both buttons
+            clearButton.setOnClickListener(buttonListen);
+            toastButton.setOnClickListener(buttonListen);
+            clearButton.setOnLongClickListener(buttonHintListen);
+            toastButton.setOnLongClickListener(buttonHintListen);
+        }
     }
     }
 }
