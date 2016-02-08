@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.content.Context;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -49,6 +50,11 @@ public class MainActivity extends AppCompatActivity {
     private class ButtonOnClickListener implements View.OnClickListener {
         @Override
         public void onClick(View v) {
+            if (v.getId() == R.id.btnClear) {
+                toToastText.setText("");
+            } else if (v.getId() == R.id.btnToast) {
+                Toast.makeText(v.getContext(), toToastText.getText().toString(), Toast.LENGTH_SHORT).show();
+            }
         }
     }
 
@@ -57,7 +63,15 @@ public class MainActivity extends AppCompatActivity {
         public
             boolean // consumes user interaction event, so that onClick will not be also be called
                 onLongClick(View v) {
+            String hint = null;
+            Context context = v.getContext();
+            if (v.getId() == R.id.btnClear) {
+                hint = context.getString(R.string.hnt_btn_clr);
+            } else if (v.getId() == R.id.btnToast) {
+                hint = context.getString(R.string.hnt_tst_btn);
+            }
             Toast.makeText(context, hint, Toast.LENGTH_LONG).show();
+            return true; // consume event
         }
     }
 }
