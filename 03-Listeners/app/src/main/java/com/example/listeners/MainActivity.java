@@ -61,9 +61,7 @@ public class MainActivity extends AppCompatActivity {
 
     private class ButtonHintOnLongClick implements View.OnLongClickListener {
         @Override
-        public
-            boolean // consumes user interaction event, so that onClick will not be also be called
-                onLongClick(View v) {
+        public boolean onLongClick(View v) {
             String hint = null;
             Context context = v.getContext();
             if (v.getId() == R.id.btnClear) {
@@ -72,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                 hint = context.getString(R.string.hnt_tst_btn);
             }
             Toast.makeText(context, hint, Toast.LENGTH_LONG).show();
-            return true; // consume event
+            return false; // onClick result shown after onLongClick result
         }
     }
 }
