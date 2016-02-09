@@ -11,5 +11,6 @@ public class MainActivity extends AppCompatActivity {
 
         // setContentView(R.layout.activity_main_margin);
         // setContentView(R.layout.activity_main_padding);
+        // setContentView(R.layout.activity_main_gravity);
     }
 }

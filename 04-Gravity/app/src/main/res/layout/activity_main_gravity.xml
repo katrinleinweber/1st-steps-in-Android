@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="16dp"
@@ -12,9 +13,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-</RelativeLayout>
         android:text="New Text 1"
         android:id="@+id/textView1"
+        android:background="@android:color/holo_green_light"
+        android:layout_gravity="left"
         />
 
     <TextView
@@ -22,6 +24,8 @@
         android:layout_height="wrap_content"
         android:text="New Text 2"
         android:id="@+id/textView2"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_gravity="center_horizontal"
         />
 
     <TextView
@@ -29,4 +33,7 @@
         android:layout_height="wrap_content"
         android:text="New Text 3"
         android:id="@+id/textView3"
+        android:background="@android:color/holo_blue_light"
+        android:layout_gravity="right"
         />
+</LinearLayout>
