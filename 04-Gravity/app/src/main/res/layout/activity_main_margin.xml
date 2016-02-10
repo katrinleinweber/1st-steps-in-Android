@@ -7,27 +7,38 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/holo_red_dark"
     tools:context="com.example.gravity.MainMarginActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Text 1"
+        android:text="small bottom margin"
         android:id="@+id/textView1"
+        android:background="@android:color/holo_red_light"
+        android:layout_marginTop="@dimen/margin_small"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Text 2"
+        android:text="big top \& left margin"
         android:id="@+id/textView2"
+        android:layout_toRightOf="@id/textView1"
+        android:background="@android:color/holo_red_light"
+        android:layout_marginTop="@dimen/margin_big"
+        android:layout_marginLeft="@dimen/margin_big"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Text 3"
+        android:text="small top \& left margin"
         android:id="@+id/textView3"
+        android:background="@android:color/holo_red_light"
+        android:layout_toRightOf="@id/textView2"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginLeft="@dimen/margin_small"
         />
 
 </RelativeLayout>

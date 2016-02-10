@@ -8,5 +8,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // setContentView(R.layout.activity_main_margin);
+        // setContentView(R.layout.activity_main_padding);
+        // setContentView(R.layout.activity_main_gravity);
     }
 }
