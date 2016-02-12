@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">LabUI</string>
+    <string name="clickMe">Click me</string>
+    <string name="empty" />
 </resources>
