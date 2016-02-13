@@ -11,8 +11,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Intent secondIntent = new Intent(this, SecondActivity.class);
-        secondIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.trnsfrTXT));
-        startActivity(secondIntent);
+        Intent explicitIntent = new Intent(this, SecondActivity.class);
+        explicitIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.trnsfrTXT));
+        startActivity(explicitIntent);
     }
 }
