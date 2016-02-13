@@ -19,7 +19,6 @@ public class FirstActivity extends AppCompatActivity {
     @Override
     protected void onStart(){
         super.onStart();
-        setContentView(R.layout.activity_first);
 
         Log.d(TAG, "I'm in onStart() right now!");
     }
@@ -27,7 +26,6 @@ public class FirstActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        setContentView(R.layout.activity_first);
 
         Log.d(TAG, "I'm in onResume() right now!");
     }
@@ -35,7 +33,6 @@ public class FirstActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
-        setContentView(R.layout.activity_first);
 
         Log.d(TAG, "I'm in onPause() right now!");
     }
@@ -43,7 +40,6 @@ public class FirstActivity extends AppCompatActivity {
     @Override
     protected void onStop() {
         super.onStop();
-        setContentView(R.layout.activity_first);
 
         Log.d(TAG, "I'm in onStop() right now!");
     }
@@ -51,7 +47,6 @@ public class FirstActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        setContentView(R.layout.activity_first);
 
         Log.d(TAG, "I'm in onDestroy() right now!");
     }
