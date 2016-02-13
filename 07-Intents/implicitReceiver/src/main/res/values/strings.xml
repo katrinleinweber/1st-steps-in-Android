@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ImplicitReceiver</string>
+    <string name="dialing">Ring, ring!</string>
+</resources>
