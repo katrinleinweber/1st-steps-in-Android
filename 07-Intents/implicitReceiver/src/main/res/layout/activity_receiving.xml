@@ -16,4 +16,13 @@
         android:text="@string/dialing"
         />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/callBack"
+        android:text="Call back!"
+        android:onClick="callBack"
+        android:layout_below="@id/dialing"
+        />
+
 </RelativeLayout>
