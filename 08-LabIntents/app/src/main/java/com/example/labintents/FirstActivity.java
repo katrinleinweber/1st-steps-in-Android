@@ -12,15 +12,20 @@ public class FirstActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first);
-    }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        setContentView(R.layout.activity_first);
+        // declare local variables (can't be done on the fly within in the statements
+        Intent backTo1st = getIntent();
+        Bundle toastFrom2nd = null;
 
-        String bundleString = getIntent().getExtras().getString(Intent.EXTRA_TEXT);
-        Toast.makeText(this, bundleString, Toast.LENGTH_SHORT).show();
+        // check for extras of intent
+        if (backTo1st != null) {
+            toastFrom2nd = backTo1st.getExtras();
+        }
+
+        // check for message within extras
+        if (toastFrom2nd != null && toastFrom2nd.containsKey(SecondActivity.EXTRA_MSG_KEY)) {
+            Toast.makeText(this, toastFrom2nd.getString(SecondActivity.EXTRA_MSG_KEY), Toast.LENGTH_LONG).show();
+        }
     }
 
     public void forwardTo2nd (View v) {

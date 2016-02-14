@@ -2,8 +2,7 @@
     <string name="app_name">LabIntents</string>
     <string name="btn1st">Go forward to 2nd!</string>
     <string name="txt1st">First!</string>
-    <string name="txt2nd">Second!</string>
-    <string name="btn2nd">Go back to 1st!</string>
+    <string name="txt2nd">Type the 2nd toast here!</string>
+    <string name="btn2nd">Toast this to 1st!</string>
     <string name="toastFrom1st">A toast from 1st!</string>
-    <string name="toastFrom2nd">A toast from 2nd!</string>
 </resources>
