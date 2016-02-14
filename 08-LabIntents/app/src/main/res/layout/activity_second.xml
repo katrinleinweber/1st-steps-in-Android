@@ -23,6 +23,7 @@
         android:id="@+id/btn2nd"
         android:text="@string/btn2nd"
         android:layout_below="@id/txt2nd"
+        android:onClick="backTo1st"
         />
 
 </RelativeLayout>

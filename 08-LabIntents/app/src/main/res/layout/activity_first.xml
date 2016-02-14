@@ -22,6 +22,7 @@
         android:id="@+id/btn1st"
         android:text="@string/btn1st"
         android:layout_below="@id/txt1st"
+        android:onClick="forwardTo2nd"
         />
 
 </RelativeLayout>
