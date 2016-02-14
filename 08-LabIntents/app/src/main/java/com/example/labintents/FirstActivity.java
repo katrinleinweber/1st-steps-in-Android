@@ -14,6 +14,15 @@ public class FirstActivity extends AppCompatActivity {
         setContentView(R.layout.activity_first);
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        setContentView(R.layout.activity_first);
+
+        String bundleString = getIntent().getExtras().getString(Intent.EXTRA_TEXT);
+        Toast.makeText(this, bundleString, Toast.LENGTH_SHORT).show();
+    }
+
     public void forwardTo2nd (View v) {
         Intent forwardIntent = new Intent(FirstActivity.this, SecondActivity.class);
         forwardIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.toastFrom1st));

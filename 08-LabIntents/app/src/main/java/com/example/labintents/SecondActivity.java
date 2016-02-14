@@ -19,6 +19,7 @@ public class SecondActivity extends AppCompatActivity {
 
     public void backTo1st(View v) {
         Intent backTo1st = new Intent(SecondActivity.this, FirstActivity.class);
+        backTo1st.putExtra(Intent.EXTRA_TEXT, getString(R.string.toastFrom2nd));
         startActivity(backTo1st);
     }
 }

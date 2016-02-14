@@ -5,4 +5,5 @@
     <string name="txt2nd">Second!</string>
     <string name="btn2nd">Go back to 1st!</string>
     <string name="toastFrom1st">A toast from 1st!</string>
+    <string name="toastFrom2nd">A toast from 2nd!</string>
 </resources>
