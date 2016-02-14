@@ -13,6 +13,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/lvMainList"
-        android:entries="@array/list_objects_solar_system"
         />
+
+        <!-- populate list via
+        android:entries="@array/list_objects_solar_system"
+        or in .java
+        -->
+
 </RelativeLayout>
