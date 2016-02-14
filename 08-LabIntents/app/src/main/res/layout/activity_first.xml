@@ -9,4 +9,20 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.labintents.FirstActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt1st"
+        android:text="@string/txt1st"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn1st"
+        android:text="@string/btn1st"
+        android:layout_below="@id/txt1st"
+        android:onClick="forwardTo2nd"
+        />
+
 </RelativeLayout>
