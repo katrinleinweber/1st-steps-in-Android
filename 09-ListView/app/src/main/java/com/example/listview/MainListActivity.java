@@ -21,5 +21,14 @@ public class MainListActivity extends AppCompatActivity {
         // initialise adapter from array of strings with a default row UI
         listView.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,
                 getResources().getStringArray(R.array.list_objects_solar_system)));
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(view.getContext(),
+                        (String) parent.getAdapter().getItem(position),
+                        Toast.LENGTH_LONG).show();
+            }
+        });
     }
 }
