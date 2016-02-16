@@ -2,6 +2,7 @@ package com.example.customadapter;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 public class MainListActivity extends AppCompatActivity {
@@ -13,5 +14,9 @@ public class MainListActivity extends AppCompatActivity {
 
         // cast ListView to variable countingList
         ListView countingList = (ListView) findViewById(R.id.lvCounting);
+
+        // set new adapter of class CountingListAdapter to cast ListView
+        countingList.setAdapter(new CountingListAdapter(getLayoutInflater()));
+
     }
 }
