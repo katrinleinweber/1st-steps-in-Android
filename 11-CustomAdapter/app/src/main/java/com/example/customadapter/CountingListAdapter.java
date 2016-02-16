@@ -4,6 +4,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 public class CountingListAdapter extends BaseAdapter {
 
@@ -42,5 +44,15 @@ public class CountingListAdapter extends BaseAdapter {
 
         // search (inflated) convertView for IDs
         ImageView image = (ImageView) convertView.findViewById(R.id.ivIcon);
+
+        // set image to system resources, depending on even or odd position
+        image.setImageResource(position%2==0?android.R.drawable.sym_action_call:
+                android.R.drawable.sym_action_chat);
+
+        // set text to string value of position
+        TextView text = (TextView) convertView.findViewById(R.id.tvItem);
+        text.setText(String.valueOf(position));
+
+        return convertView;
     }
 }
