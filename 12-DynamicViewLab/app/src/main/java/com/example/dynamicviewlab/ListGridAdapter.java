@@ -15,4 +15,9 @@ public class ListGridAdapter extends BaseAdapter {
         mCurrentMode = mode;
         mMaxItems = maxItems;
     }
+
+    @Override
+    public Object getItem(int position) {
+        return new Integer(position + 1);
+    }
 }

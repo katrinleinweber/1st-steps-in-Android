@@ -28,5 +28,11 @@ public class ListActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent gridIntent = new Intent(view.getContext(), GridActivity.class);
 
+                // pass integer value at adapted position along with intent
+                gridIntent.putExtra(Intent.EXTRA_UID, (int)parent.getAdapter().getItem(position));
+
+                ListActivity.this.startActivity(gridIntent);
+            }
+        });
     }
 }
